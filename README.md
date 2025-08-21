@@ -1,54 +1,50 @@
-# 🧪 Python para Data Science - Estudos Iniciais
+# 🧩 Modelagem de Banco de Dados - Projeto Seguro
 
-Este repositório contém meus primeiros estudos em Python aplicados à ciência de dados, com foco nas etapas iniciais do processo CRISP-DM e conceitos básicos da linguagem.
+Este repositório contém um projeto completo de modelagem de banco de dados desenvolvido com foco em um sistema de seguros, incluindo:
+
+- Modelagem Conceitual (brModelo)
+- Modelagem Lógica
+- Script SQL de criação de tabelas (`projeto_seguro_backup.sql`)
 
 ---
 
-## 📌 Conteúdo do repositório
-
-### 🗂️ Scripts incluídos
+## 🗃️ Arquivos do Projeto
 
 | Arquivo | Descrição |
 |--------|-----------|
-| `dados.py` | Carregamento de arquivos `.csv`, visualização com pandas e preparação básica dos dados |
-| `funcoes_basicas.py` | Exemplos de criação de funções simples, como `somar(q, f)` |
-| `estrutura_condicional.py` | Uso de `if`, `else`, operadores lógicos, e exemplos com variáveis |
-| `strings_texto.py` | Exercícios com análise de texto, contagem de vogais (acentuadas e não) |
+| `Conceitual_1.brM3` | Diagrama conceitual inicial criado com o brModelo |
+| `ModelagemConceitual_2.brM3` | Versão refinada do modelo conceitual |
+| `Lógico_1.brM3` | Modelo lógico do banco |
+| `ModelagemLogica_SISSEGURO.brM3` | Versão final do modelo lógico |
+| `projeto_seguro_backup.sql` | Script SQL para criação da estrutura do banco de dados no MySQL |
+| `MBD - Aula 01.docx` | Material de apoio com conceitos de modelagem |
 
 ---
 
-## 📘 Conceitos abordados
+## 🛠️ Tecnologias utilizadas
 
-- ✅ Estruturas condicionais (`if`, `else`)
-- ✅ Funções com parâmetros e `return`
-- ✅ Tipos de dados: escalar, vetor, matriz
-- ✅ Leitura e análise de dados com `pandas`
-- ✅ Uso do método `.info()`, `.head()`, `.tail()`, `.describe()`
-- ✅ Contagem de vogais em textos com `for` e listas
-- ✅ Comentários e documentação no código
+- **brModelo** – para modelagem conceitual e lógica
+- **MySQL** – para execução do script e criação das tabelas
+- **Workbench ou DBeaver** – para visualização e testes
 
 ---
 
-## 📚 Objetivo
+## 💾 Estrutura de Tabela (exemplo)
 
-Este repositório serve como base de prática e aprendizado contínuo para minha transição de carreira como biomédica para a área de **Data Science e Inteligência Artificial**.
+A tabela `bem` armazena dados de bens segurados:
 
----
+```sql
+CREATE TABLE `bem` (
+  `id_bem` INT NOT NULL AUTO_INCREMENT,
+  `descricao` VARCHAR(50),
+  `valor_estimado` DECIMAL(9,2),
+  `rua` VARCHAR(50),
+  `bairro` VARCHAR(50),
+  `cep` CHAR(8),
+  `cidade` VARCHAR(50),
+```
+🎯 Objetivo
 
-## 🔧 Requisitos
-
-- Python 3.9+
-- pandas
-- VS Code (ou editor de sua preferência)
-
----
-
-## 🚀 Próximos passos
-
-- Aplicar esses conceitos em datasets reais
-- Incluir visualizações com `matplotlib` e `seaborn`
-- Criar notebooks Jupyter com análises completas
-
----
-📧 isabelazarholanda@gmail.com  
-🌐 [GitHub](https://github.com/iAiBel)
+Este projeto simula um sistema de cadastro de seguros, com foco em boas práticas de modelagem de banco de dados relacional. É parte dos meus estudos em modelagem de dados, com aplicação prática no MySQL.
+  PRIMARY KEY (`id_bem`)
+);
