@@ -20,7 +20,7 @@ Este repositório contém um projeto completo de modelagem de banco de dados des
 | `MBD - Aula 01 - Introdução ao MBD.docx` | Material teórico de apoio à modelagem                         |
 | `brModelo.jar`                       | Executável do brModelo (versão em Java)                           |
 | `mysql-8.4.6-winx64.msi`             | Instalador do MySQL para Windows                                  |
-| `OneDrive_1_20-08-2025.zip`          | Backup dos arquivos do projeto (opcional)                         |
+| `OneDrive_1_20-08-2025.zip`          | Backup dos arquivos do projeto (listados)                         |
 | `.gitattributes`                     | Configuração de LFS (Large File Storage) para arquivos grandes    |
 
 ---
